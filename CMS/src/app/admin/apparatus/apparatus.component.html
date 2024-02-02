@@ -1,0 +1,78 @@
+<app-header></app-header>
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Scientific Apparatus</h1>
+   
+    </div><!-- End Page Title -->
+  
+    <p>
+      <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Add Apparatus
+      </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="ltn__checkout-single-content-info">
+        <form >
+            <h6>Add Apparatus</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-item input-item-name ">
+                        <input type="text" name="name" placeholder="Medicine Name" >
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-item input-item-name ">
+                        <input type="text" name="price" placeholder="Medicine Price">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h6>Catogery</h6>
+                    <div class="input-item">
+                        <select class="nice-select">
+                            <option>Select Type</option>
+                            <option>Fever</option>
+                            <option>Headach</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h6>Medicine Description</h6>
+            <div class="input-item input-item-textarea ltn__custom-icon">
+                <textarea name="Description" required placeholder="Medicine Description."></textarea>
+            </div>
+            <a class="btn btn-success" type="submit">
+              Add Medicine
+            </a>
+        </form>
+    </div>
+    </div>
+  
+    <table class="table table-bordered mt-5">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Medicine</th>
+          <th scope="col">Price</th>
+          <th scope="col">Description</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>panadol</td>
+          <td>$10</td>
+          <td>for fever and headech</td>
+          <td>
+            <a href="#"> <i class="fa fa-pencil" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-trash" aria-hidden="true"></i> </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   
+
+  </main><!-- End #main -->
